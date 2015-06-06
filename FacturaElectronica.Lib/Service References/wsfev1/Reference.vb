@@ -14,7 +14,7 @@ Option Explicit On
 Imports System
 Imports System.Runtime.Serialization
 
-Namespace ServiceReference1
+Namespace wsfev1
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
@@ -106,10 +106,10 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeCabReqField As ServiceReference1.FECAECabRequest
+        Private FeCabReqField As wsfev1.FECAECabRequest
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeDetReqField() As ServiceReference1.FECAEDetRequest
+        Private FeDetReqField() As wsfev1.FECAEDetRequest
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -122,7 +122,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeCabReq() As ServiceReference1.FECAECabRequest
+        Public Property FeCabReq() As wsfev1.FECAECabRequest
             Get
                 Return Me.FeCabReqField
             End Get
@@ -135,7 +135,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeDetReq() As ServiceReference1.FECAEDetRequest()
+        Public Property FeDetReq() As wsfev1.FECAEDetRequest()
             Get
                 Return Me.FeDetReqField
             End Get
@@ -162,24 +162,24 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAECabRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAECabRequest
-        Inherits ServiceReference1.FECabRequest
+        Inherits wsfev1.FECabRequest
     End Class
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEDetRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute(),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECompConsResponse))>  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECompConsResponse))>  _
     Partial Public Class FECAEDetRequest
-        Inherits ServiceReference1.FEDetRequest
+        Inherits wsfev1.FEDetRequest
     End Class
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
      System.Runtime.Serialization.DataContractAttribute(Name:="FECabRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute(),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEACabRequest)),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAECabRequest))>  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEACabRequest)),  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAECabRequest))>  _
     Partial Public Class FECabRequest
         Inherits Object
         Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
@@ -257,16 +257,16 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEACabRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAEACabRequest
-        Inherits ServiceReference1.FECabRequest
+        Inherits wsfev1.FECabRequest
     End Class
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
      System.Runtime.Serialization.DataContractAttribute(Name:="FEDetRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute(),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEADetRequest)),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEDetRequest)),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECompConsResponse))>  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEADetRequest)),  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEDetRequest)),  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECompConsResponse))>  _
     Partial Public Class FEDetRequest
         Inherits Object
         Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
@@ -314,16 +314,16 @@ Namespace ServiceReference1
         Private MonCotizField As Double
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private CbtesAsocField() As ServiceReference1.CbteAsoc
+        Private CbtesAsocField() As wsfev1.CbteAsoc
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private TributosField() As ServiceReference1.Tributo
+        Private TributosField() As wsfev1.Tributo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private IvaField() As ServiceReference1.AlicIva
+        Private IvaField() As wsfev1.AlicIva
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private OpcionalesField() As ServiceReference1.Opcional
+        Private OpcionalesField() As wsfev1.Opcional
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -557,7 +557,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=17)>  _
-        Public Property CbtesAsoc() As ServiceReference1.CbteAsoc()
+        Public Property CbtesAsoc() As wsfev1.CbteAsoc()
             Get
                 Return Me.CbtesAsocField
             End Get
@@ -570,7 +570,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=18)>  _
-        Public Property Tributos() As ServiceReference1.Tributo()
+        Public Property Tributos() As wsfev1.Tributo()
             Get
                 Return Me.TributosField
             End Get
@@ -583,7 +583,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=19)>  _
-        Public Property Iva() As ServiceReference1.AlicIva()
+        Public Property Iva() As wsfev1.AlicIva()
             Get
                 Return Me.IvaField
             End Get
@@ -596,7 +596,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=20)>  _
-        Public Property Opcionales() As ServiceReference1.Opcional()
+        Public Property Opcionales() As wsfev1.Opcional()
             Get
                 Return Me.OpcionalesField
             End Get
@@ -623,7 +623,7 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEADetRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAEADetRequest
-        Inherits ServiceReference1.FEDetRequest
+        Inherits wsfev1.FEDetRequest
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
         Private CAEAField As String
@@ -647,7 +647,7 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECompConsResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECompConsResponse
-        Inherits ServiceReference1.FECAEDetRequest
+        Inherits wsfev1.FECAEDetRequest
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
         Private ResultadoField As String
@@ -665,7 +665,7 @@ Namespace ServiceReference1
         Private FchProcesoField As String
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ObservacionesField() As ServiceReference1.Obs
+        Private ObservacionesField() As wsfev1.Obs
         
         Private PtoVtaField As Integer
         
@@ -737,7 +737,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=5)>  _
-        Public Property Observaciones() As ServiceReference1.Obs()
+        Public Property Observaciones() As wsfev1.Obs()
             Get
                 Return Me.ObservacionesField
             End Get
@@ -1172,16 +1172,16 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeCabRespField As ServiceReference1.FECAECabResponse
+        Private FeCabRespField As wsfev1.FECAECabResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeDetRespField() As ServiceReference1.FECAEDetResponse
+        Private FeDetRespField() As wsfev1.FECAEDetResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -1194,7 +1194,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeCabResp() As ServiceReference1.FECAECabResponse
+        Public Property FeCabResp() As wsfev1.FECAECabResponse
             Get
                 Return Me.FeCabRespField
             End Get
@@ -1207,7 +1207,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeDetResp() As ServiceReference1.FECAEDetResponse()
+        Public Property FeDetResp() As wsfev1.FECAEDetResponse()
             Get
                 Return Me.FeDetRespField
             End Get
@@ -1220,7 +1220,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -1233,7 +1233,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=3)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -1260,7 +1260,7 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAECabResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAECabResponse
-        Inherits ServiceReference1.FECabResponse
+        Inherits wsfev1.FECabResponse
     End Class
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
@@ -1268,7 +1268,7 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEDetResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAEDetResponse
-        Inherits ServiceReference1.FEDetResponse
+        Inherits wsfev1.FEDetResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
         Private CAEField As String
@@ -1431,8 +1431,8 @@ Namespace ServiceReference1
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
      System.Runtime.Serialization.DataContractAttribute(Name:="FECabResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute(),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEACabResponse)),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAECabResponse))>  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEACabResponse)),  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAECabResponse))>  _
     Partial Public Class FECabResponse
         Inherits Object
         Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
@@ -1573,15 +1573,15 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEACabResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAEACabResponse
-        Inherits ServiceReference1.FECabResponse
+        Inherits wsfev1.FECabResponse
     End Class
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
      System.Runtime.Serialization.DataContractAttribute(Name:="FEDetResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute(),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEADetResponse)),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEDetResponse))>  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEADetResponse)),  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEDetResponse))>  _
     Partial Public Class FEDetResponse
         Inherits Object
         Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
@@ -1606,7 +1606,7 @@ Namespace ServiceReference1
         Private ResultadoField As String
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ObservacionesField() As ServiceReference1.Obs
+        Private ObservacionesField() As wsfev1.Obs
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -1710,7 +1710,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=7)>  _
-        Public Property Observaciones() As ServiceReference1.Obs()
+        Public Property Observaciones() As wsfev1.Obs()
             Get
                 Return Me.ObservacionesField
             End Get
@@ -1737,7 +1737,7 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEADetResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAEADetResponse
-        Inherits ServiceReference1.FEDetResponse
+        Inherits wsfev1.FEDetResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
         Private CAEAField As String
@@ -1770,10 +1770,10 @@ Namespace ServiceReference1
         Private RegXReqField As Integer
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -1799,7 +1799,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -1812,7 +1812,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -1931,10 +1931,10 @@ Namespace ServiceReference1
         Private CbteNroField As Integer
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -1986,7 +1986,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=3)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -1999,7 +1999,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=4)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2109,13 +2109,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField As ServiceReference1.FECompConsResponse
+        Private ResultGetField As wsfev1.FECompConsResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2128,7 +2128,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.FECompConsResponse
+        Public Property ResultGet() As wsfev1.FECompConsResponse
             Get
                 Return Me.ResultGetField
             End Get
@@ -2141,7 +2141,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2154,7 +2154,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2188,10 +2188,10 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeCabReqField As ServiceReference1.FECAEACabRequest
+        Private FeCabReqField As wsfev1.FECAEACabRequest
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeDetReqField() As ServiceReference1.FECAEADetRequest
+        Private FeDetReqField() As wsfev1.FECAEADetRequest
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2204,7 +2204,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeCabReq() As ServiceReference1.FECAEACabRequest
+        Public Property FeCabReq() As wsfev1.FECAEACabRequest
             Get
                 Return Me.FeCabReqField
             End Get
@@ -2217,7 +2217,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeDetReq() As ServiceReference1.FECAEADetRequest()
+        Public Property FeDetReq() As wsfev1.FECAEADetRequest()
             Get
                 Return Me.FeDetReqField
             End Get
@@ -2251,16 +2251,16 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeCabRespField As ServiceReference1.FECAEACabResponse
+        Private FeCabRespField As wsfev1.FECAEACabResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private FeDetRespField() As ServiceReference1.FECAEADetResponse
+        Private FeDetRespField() As wsfev1.FECAEADetResponse
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2273,7 +2273,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeCabResp() As ServiceReference1.FECAEACabResponse
+        Public Property FeCabResp() As wsfev1.FECAEACabResponse
             Get
                 Return Me.FeCabRespField
             End Get
@@ -2286,7 +2286,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property FeDetResp() As ServiceReference1.FECAEADetResponse()
+        Public Property FeDetResp() As wsfev1.FECAEADetResponse()
             Get
                 Return Me.FeDetRespField
             End Get
@@ -2299,7 +2299,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2312,7 +2312,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=3)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2346,13 +2346,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField As ServiceReference1.FECAEAGet
+        Private ResultGetField As wsfev1.FECAEAGet
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2365,7 +2365,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.FECAEAGet
+        Public Property ResultGet() As wsfev1.FECAEAGet
             Get
                 Return Me.ResultGetField
             End Get
@@ -2378,7 +2378,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2391,7 +2391,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2566,13 +2566,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.FECAEASinMov
+        Private ResultGetField() As wsfev1.FECAEASinMov
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2585,7 +2585,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.FECAEASinMov()
+        Public Property ResultGet() As wsfev1.FECAEASinMov()
             Get
                 Return Me.ResultGetField
             End Get
@@ -2598,7 +2598,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2611,7 +2611,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2637,7 +2637,7 @@ Namespace ServiceReference1
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEASinMov", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute(),  _
-     System.Runtime.Serialization.KnownTypeAttribute(GetType(ServiceReference1.FECAEASinMovResponse))>  _
+     System.Runtime.Serialization.KnownTypeAttribute(GetType(wsfev1.FECAEASinMovResponse))>  _
     Partial Public Class FECAEASinMov
         Inherits Object
         Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
@@ -2717,16 +2717,16 @@ Namespace ServiceReference1
      System.Runtime.Serialization.DataContractAttribute(Name:="FECAEASinMovResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/"),  _
      System.SerializableAttribute()>  _
     Partial Public Class FECAEASinMovResponse
-        Inherits ServiceReference1.FECAEASinMov
+        Inherits wsfev1.FECAEASinMov
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
         Private ResultadoField As String
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
         Public Property Resultado() As String
@@ -2742,7 +2742,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2755,7 +2755,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2780,13 +2780,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField As ServiceReference1.Cotizacion
+        Private ResultGetField As wsfev1.Cotizacion
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2799,7 +2799,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.Cotizacion
+        Public Property ResultGet() As wsfev1.Cotizacion
             Get
                 Return Me.ResultGetField
             End Get
@@ -2812,7 +2812,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2825,7 +2825,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -2937,13 +2937,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.TributoTipo
+        Private ResultGetField() As wsfev1.TributoTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -2956,7 +2956,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.TributoTipo()
+        Public Property ResultGet() As wsfev1.TributoTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -2969,7 +2969,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -2982,7 +2982,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -3110,13 +3110,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.Moneda
+        Private ResultGetField() As wsfev1.Moneda
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -3129,7 +3129,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.Moneda()
+        Public Property ResultGet() As wsfev1.Moneda()
             Get
                 Return Me.ResultGetField
             End Get
@@ -3142,7 +3142,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -3155,7 +3155,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -3284,13 +3284,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.IvaTipo
+        Private ResultGetField() As wsfev1.IvaTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -3303,7 +3303,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.IvaTipo()
+        Public Property ResultGet() As wsfev1.IvaTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -3316,7 +3316,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -3329,7 +3329,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -3458,13 +3458,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.OpcionalTipo
+        Private ResultGetField() As wsfev1.OpcionalTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -3477,7 +3477,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.OpcionalTipo()
+        Public Property ResultGet() As wsfev1.OpcionalTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -3490,7 +3490,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -3503,7 +3503,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -3632,13 +3632,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.ConceptoTipo
+        Private ResultGetField() As wsfev1.ConceptoTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -3651,7 +3651,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.ConceptoTipo()
+        Public Property ResultGet() As wsfev1.ConceptoTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -3664,7 +3664,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -3677,7 +3677,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -3805,13 +3805,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.PtoVenta
+        Private ResultGetField() As wsfev1.PtoVenta
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -3824,7 +3824,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.PtoVenta()
+        Public Property ResultGet() As wsfev1.PtoVenta()
             Get
                 Return Me.ResultGetField
             End Get
@@ -3837,7 +3837,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -3850,7 +3850,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -3978,13 +3978,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.CbteTipo
+        Private ResultGetField() As wsfev1.CbteTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -3997,7 +3997,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.CbteTipo()
+        Public Property ResultGet() As wsfev1.CbteTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -4010,7 +4010,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -4023,7 +4023,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -4151,13 +4151,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.DocTipo
+        Private ResultGetField() As wsfev1.DocTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -4170,7 +4170,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.DocTipo()
+        Public Property ResultGet() As wsfev1.DocTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -4183,7 +4183,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -4196,7 +4196,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -4324,13 +4324,13 @@ Namespace ServiceReference1
         Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ResultGetField() As ServiceReference1.PaisTipo
+        Private ResultGetField() As wsfev1.PaisTipo
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private ErrorsField() As ServiceReference1.Err
+        Private ErrorsField() As wsfev1.Err
         
         <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private EventsField() As ServiceReference1.Evt
+        Private EventsField() As wsfev1.Evt
         
         <Global.System.ComponentModel.BrowsableAttribute(false)>  _
         Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
@@ -4343,7 +4343,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false)>  _
-        Public Property ResultGet() As ServiceReference1.PaisTipo()
+        Public Property ResultGet() As wsfev1.PaisTipo()
             Get
                 Return Me.ResultGetField
             End Get
@@ -4356,7 +4356,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public Property Errors() As ServiceReference1.Err()
+        Public Property Errors() As wsfev1.Err()
             Get
                 Return Me.ErrorsField
             End Get
@@ -4369,7 +4369,7 @@ Namespace ServiceReference1
         End Property
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=2)>  _
-        Public Property Events() As ServiceReference1.Evt()
+        Public Property Events() As wsfev1.Evt()
             Get
                 Return Me.EventsField
             End Get
@@ -4454,88 +4454,88 @@ Namespace ServiceReference1
     End Class
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
-     System.ServiceModel.ServiceContractAttribute([Namespace]:="http://ar.gov.afip.dif.FEV1/", ConfigurationName:="ServiceReference1.ServiceSoap")>  _
+     System.ServiceModel.ServiceContractAttribute([Namespace]:="http://ar.gov.afip.dif.FEV1/", ConfigurationName:="wsfev1.ServiceSoap")>  _
     Public Interface ServiceSoap
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECAESolicitar", ReplyAction:="*")>  _
-        Function FECAESolicitar(ByVal request As ServiceReference1.FECAESolicitarRequest) As ServiceReference1.FECAESolicitarResponse
+        Function FECAESolicitar(ByVal request As wsfev1.FECAESolicitarRequest) As wsfev1.FECAESolicitarResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECompTotXRequest", ReplyAction:="*")>  _
-        Function FECompTotXRequest(ByVal request As ServiceReference1.FECompTotXRequestRequest) As ServiceReference1.FECompTotXRequestResponse
+        Function FECompTotXRequest(ByVal request As wsfev1.FECompTotXRequestRequest) As wsfev1.FECompTotXRequestResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento FEDummyResult del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEDummy", ReplyAction:="*")>  _
-        Function FEDummy(ByVal request As ServiceReference1.FEDummyRequest) As ServiceReference1.FEDummyResponse
+        Function FEDummy(ByVal request As wsfev1.FEDummyRequest) As wsfev1.FEDummyResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECompUltimoAutorizado", ReplyAction:="*")>  _
-        Function FECompUltimoAutorizado(ByVal request As ServiceReference1.FECompUltimoAutorizadoRequest) As ServiceReference1.FECompUltimoAutorizadoResponse
+        Function FECompUltimoAutorizado(ByVal request As wsfev1.FECompUltimoAutorizadoRequest) As wsfev1.FECompUltimoAutorizadoResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECompConsultar", ReplyAction:="*")>  _
-        Function FECompConsultar(ByVal request As ServiceReference1.FECompConsultarRequest) As ServiceReference1.FECompConsultarResponse
+        Function FECompConsultar(ByVal request As wsfev1.FECompConsultarRequest) As wsfev1.FECompConsultarResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECAEARegInformativo", ReplyAction:="*")>  _
-        Function FECAEARegInformativo(ByVal request As ServiceReference1.FECAEARegInformativoRequest) As ServiceReference1.FECAEARegInformativoResponse
+        Function FECAEARegInformativo(ByVal request As wsfev1.FECAEARegInformativoRequest) As wsfev1.FECAEARegInformativoResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECAEASolicitar", ReplyAction:="*")>  _
-        Function FECAEASolicitar(ByVal request As ServiceReference1.FECAEASolicitarRequest) As ServiceReference1.FECAEASolicitarResponse
+        Function FECAEASolicitar(ByVal request As wsfev1.FECAEASolicitarRequest) As wsfev1.FECAEASolicitarResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECAEASinMovimientoConsultar", ReplyAction:="*")>  _
-        Function FECAEASinMovimientoConsultar(ByVal request As ServiceReference1.FECAEASinMovimientoConsultarRequest) As ServiceReference1.FECAEASinMovimientoConsultarResponse
+        Function FECAEASinMovimientoConsultar(ByVal request As wsfev1.FECAEASinMovimientoConsultarRequest) As wsfev1.FECAEASinMovimientoConsultarResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECAEASinMovimientoInformar", ReplyAction:="*")>  _
-        Function FECAEASinMovimientoInformar(ByVal request As ServiceReference1.FECAEASinMovimientoInformarRequest) As ServiceReference1.FECAEASinMovimientoInformarResponse
+        Function FECAEASinMovimientoInformar(ByVal request As wsfev1.FECAEASinMovimientoInformarRequest) As wsfev1.FECAEASinMovimientoInformarResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FECAEAConsultar", ReplyAction:="*")>  _
-        Function FECAEAConsultar(ByVal request As ServiceReference1.FECAEAConsultarRequest) As ServiceReference1.FECAEAConsultarResponse
+        Function FECAEAConsultar(ByVal request As wsfev1.FECAEAConsultarRequest) As wsfev1.FECAEAConsultarResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetCotizacion", ReplyAction:="*")>  _
-        Function FEParamGetCotizacion(ByVal request As ServiceReference1.FEParamGetCotizacionRequest) As ServiceReference1.FEParamGetCotizacionResponse
+        Function FEParamGetCotizacion(ByVal request As wsfev1.FEParamGetCotizacionRequest) As wsfev1.FEParamGetCotizacionResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposTributos", ReplyAction:="*")>  _
-        Function FEParamGetTiposTributos(ByVal request As ServiceReference1.FEParamGetTiposTributosRequest) As ServiceReference1.FEParamGetTiposTributosResponse
+        Function FEParamGetTiposTributos(ByVal request As wsfev1.FEParamGetTiposTributosRequest) As wsfev1.FEParamGetTiposTributosResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposMonedas", ReplyAction:="*")>  _
-        Function FEParamGetTiposMonedas(ByVal request As ServiceReference1.FEParamGetTiposMonedasRequest) As ServiceReference1.FEParamGetTiposMonedasResponse
+        Function FEParamGetTiposMonedas(ByVal request As wsfev1.FEParamGetTiposMonedasRequest) As wsfev1.FEParamGetTiposMonedasResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposIva", ReplyAction:="*")>  _
-        Function FEParamGetTiposIva(ByVal request As ServiceReference1.FEParamGetTiposIvaRequest) As ServiceReference1.FEParamGetTiposIvaResponse
+        Function FEParamGetTiposIva(ByVal request As wsfev1.FEParamGetTiposIvaRequest) As wsfev1.FEParamGetTiposIvaResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposOpcional", ReplyAction:="*")>  _
-        Function FEParamGetTiposOpcional(ByVal request As ServiceReference1.FEParamGetTiposOpcionalRequest) As ServiceReference1.FEParamGetTiposOpcionalResponse
+        Function FEParamGetTiposOpcional(ByVal request As wsfev1.FEParamGetTiposOpcionalRequest) As wsfev1.FEParamGetTiposOpcionalResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposConcepto", ReplyAction:="*")>  _
-        Function FEParamGetTiposConcepto(ByVal request As ServiceReference1.FEParamGetTiposConceptoRequest) As ServiceReference1.FEParamGetTiposConceptoResponse
+        Function FEParamGetTiposConcepto(ByVal request As wsfev1.FEParamGetTiposConceptoRequest) As wsfev1.FEParamGetTiposConceptoResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetPtosVenta", ReplyAction:="*")>  _
-        Function FEParamGetPtosVenta(ByVal request As ServiceReference1.FEParamGetPtosVentaRequest) As ServiceReference1.FEParamGetPtosVentaResponse
+        Function FEParamGetPtosVenta(ByVal request As wsfev1.FEParamGetPtosVentaRequest) As wsfev1.FEParamGetPtosVentaResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposCbte", ReplyAction:="*")>  _
-        Function FEParamGetTiposCbte(ByVal request As ServiceReference1.FEParamGetTiposCbteRequest) As ServiceReference1.FEParamGetTiposCbteResponse
+        Function FEParamGetTiposCbte(ByVal request As wsfev1.FEParamGetTiposCbteRequest) As wsfev1.FEParamGetTiposCbteResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposDoc", ReplyAction:="*")>  _
-        Function FEParamGetTiposDoc(ByVal request As ServiceReference1.FEParamGetTiposDocRequest) As ServiceReference1.FEParamGetTiposDocResponse
+        Function FEParamGetTiposDoc(ByVal request As wsfev1.FEParamGetTiposDocRequest) As wsfev1.FEParamGetTiposDocResponse
         
         'CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Auth del espacio de nombres http://ar.gov.afip.dif.FEV1/ no está marcado para aceptar valores nil.
         <System.ServiceModel.OperationContractAttribute(Action:="http://ar.gov.afip.dif.FEV1/FEParamGetTiposPaises", ReplyAction:="*")>  _
-        Function FEParamGetTiposPaises(ByVal request As ServiceReference1.FEParamGetTiposPaisesRequest) As ServiceReference1.FEParamGetTiposPaisesResponse
+        Function FEParamGetTiposPaises(ByVal request As wsfev1.FEParamGetTiposPaisesRequest) As wsfev1.FEParamGetTiposPaisesResponse
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
@@ -4545,13 +4545,13 @@ Namespace ServiceReference1
     Partial Public Class FECAESolicitarRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAESolicitar", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAESolicitarRequestBody
+        Public Body As wsfev1.FECAESolicitarRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAESolicitarRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECAESolicitarRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4564,16 +4564,16 @@ Namespace ServiceReference1
     Partial Public Class FECAESolicitarRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public FeCAEReq As ServiceReference1.FECAERequest
+        Public FeCAEReq As wsfev1.FECAERequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal FeCAEReq As ServiceReference1.FECAERequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal FeCAEReq As wsfev1.FECAERequest)
             MyBase.New
             Me.Auth = Auth
             Me.FeCAEReq = FeCAEReq
@@ -4587,13 +4587,13 @@ Namespace ServiceReference1
     Partial Public Class FECAESolicitarResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAESolicitarResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAESolicitarResponseBody
+        Public Body As wsfev1.FECAESolicitarResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAESolicitarResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECAESolicitarResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4606,13 +4606,13 @@ Namespace ServiceReference1
     Partial Public Class FECAESolicitarResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECAESolicitarResult As ServiceReference1.FECAEResponse
+        Public FECAESolicitarResult As wsfev1.FECAEResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECAESolicitarResult As ServiceReference1.FECAEResponse)
+        Public Sub New(ByVal FECAESolicitarResult As wsfev1.FECAEResponse)
             MyBase.New
             Me.FECAESolicitarResult = FECAESolicitarResult
         End Sub
@@ -4625,13 +4625,13 @@ Namespace ServiceReference1
     Partial Public Class FECompTotXRequestRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECompTotXRequest", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECompTotXRequestRequestBody
+        Public Body As wsfev1.FECompTotXRequestRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECompTotXRequestRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECompTotXRequestRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4644,13 +4644,13 @@ Namespace ServiceReference1
     Partial Public Class FECompTotXRequestRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -4663,13 +4663,13 @@ Namespace ServiceReference1
     Partial Public Class FECompTotXRequestResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECompTotXRequestResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECompTotXRequestResponseBody
+        Public Body As wsfev1.FECompTotXRequestResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECompTotXRequestResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECompTotXRequestResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4682,13 +4682,13 @@ Namespace ServiceReference1
     Partial Public Class FECompTotXRequestResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECompTotXRequestResult As ServiceReference1.FERegXReqResponse
+        Public FECompTotXRequestResult As wsfev1.FERegXReqResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECompTotXRequestResult As ServiceReference1.FERegXReqResponse)
+        Public Sub New(ByVal FECompTotXRequestResult As wsfev1.FERegXReqResponse)
             MyBase.New
             Me.FECompTotXRequestResult = FECompTotXRequestResult
         End Sub
@@ -4701,13 +4701,13 @@ Namespace ServiceReference1
     Partial Public Class FEDummyRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEDummy", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEDummyRequestBody
+        Public Body As wsfev1.FEDummyRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEDummyRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEDummyRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4731,13 +4731,13 @@ Namespace ServiceReference1
     Partial Public Class FEDummyResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEDummyResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEDummyResponseBody
+        Public Body As wsfev1.FEDummyResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEDummyResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEDummyResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4750,13 +4750,13 @@ Namespace ServiceReference1
     Partial Public Class FEDummyResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEDummyResult As ServiceReference1.DummyResponse
+        Public FEDummyResult As wsfev1.DummyResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEDummyResult As ServiceReference1.DummyResponse)
+        Public Sub New(ByVal FEDummyResult As wsfev1.DummyResponse)
             MyBase.New
             Me.FEDummyResult = FEDummyResult
         End Sub
@@ -4769,13 +4769,13 @@ Namespace ServiceReference1
     Partial Public Class FECompUltimoAutorizadoRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECompUltimoAutorizado", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECompUltimoAutorizadoRequestBody
+        Public Body As wsfev1.FECompUltimoAutorizadoRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECompUltimoAutorizadoRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECompUltimoAutorizadoRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4788,7 +4788,7 @@ Namespace ServiceReference1
     Partial Public Class FECompUltimoAutorizadoRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
         Public PtoVta As Integer
@@ -4800,7 +4800,7 @@ Namespace ServiceReference1
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CbteTipo As Integer)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CbteTipo As Integer)
             MyBase.New
             Me.Auth = Auth
             Me.PtoVta = PtoVta
@@ -4815,13 +4815,13 @@ Namespace ServiceReference1
     Partial Public Class FECompUltimoAutorizadoResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECompUltimoAutorizadoResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECompUltimoAutorizadoResponseBody
+        Public Body As wsfev1.FECompUltimoAutorizadoResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECompUltimoAutorizadoResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECompUltimoAutorizadoResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4834,13 +4834,13 @@ Namespace ServiceReference1
     Partial Public Class FECompUltimoAutorizadoResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECompUltimoAutorizadoResult As ServiceReference1.FERecuperaLastCbteResponse
+        Public FECompUltimoAutorizadoResult As wsfev1.FERecuperaLastCbteResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECompUltimoAutorizadoResult As ServiceReference1.FERecuperaLastCbteResponse)
+        Public Sub New(ByVal FECompUltimoAutorizadoResult As wsfev1.FERecuperaLastCbteResponse)
             MyBase.New
             Me.FECompUltimoAutorizadoResult = FECompUltimoAutorizadoResult
         End Sub
@@ -4853,13 +4853,13 @@ Namespace ServiceReference1
     Partial Public Class FECompConsultarRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECompConsultar", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECompConsultarRequestBody
+        Public Body As wsfev1.FECompConsultarRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECompConsultarRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECompConsultarRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4872,16 +4872,16 @@ Namespace ServiceReference1
     Partial Public Class FECompConsultarRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public FeCompConsReq As ServiceReference1.FECompConsultaReq
+        Public FeCompConsReq As wsfev1.FECompConsultaReq
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal FeCompConsReq As ServiceReference1.FECompConsultaReq)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal FeCompConsReq As wsfev1.FECompConsultaReq)
             MyBase.New
             Me.Auth = Auth
             Me.FeCompConsReq = FeCompConsReq
@@ -4895,13 +4895,13 @@ Namespace ServiceReference1
     Partial Public Class FECompConsultarResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECompConsultarResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECompConsultarResponseBody
+        Public Body As wsfev1.FECompConsultarResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECompConsultarResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECompConsultarResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4914,13 +4914,13 @@ Namespace ServiceReference1
     Partial Public Class FECompConsultarResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECompConsultarResult As ServiceReference1.FECompConsultaResponse
+        Public FECompConsultarResult As wsfev1.FECompConsultaResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECompConsultarResult As ServiceReference1.FECompConsultaResponse)
+        Public Sub New(ByVal FECompConsultarResult As wsfev1.FECompConsultaResponse)
             MyBase.New
             Me.FECompConsultarResult = FECompConsultarResult
         End Sub
@@ -4933,13 +4933,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEARegInformativoRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEARegInformativo", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEARegInformativoRequestBody
+        Public Body As wsfev1.FECAEARegInformativoRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEARegInformativoRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEARegInformativoRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4952,16 +4952,16 @@ Namespace ServiceReference1
     Partial Public Class FECAEARegInformativoRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
-        Public FeCAEARegInfReq As ServiceReference1.FECAEARequest
+        Public FeCAEARegInfReq As wsfev1.FECAEARequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal FeCAEARegInfReq As ServiceReference1.FECAEARequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal FeCAEARegInfReq As wsfev1.FECAEARequest)
             MyBase.New
             Me.Auth = Auth
             Me.FeCAEARegInfReq = FeCAEARegInfReq
@@ -4975,13 +4975,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEARegInformativoResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEARegInformativoResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEARegInformativoResponseBody
+        Public Body As wsfev1.FECAEARegInformativoResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEARegInformativoResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEARegInformativoResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -4994,13 +4994,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEARegInformativoResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECAEARegInformativoResult As ServiceReference1.FECAEAResponse
+        Public FECAEARegInformativoResult As wsfev1.FECAEAResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECAEARegInformativoResult As ServiceReference1.FECAEAResponse)
+        Public Sub New(ByVal FECAEARegInformativoResult As wsfev1.FECAEAResponse)
             MyBase.New
             Me.FECAEARegInformativoResult = FECAEARegInformativoResult
         End Sub
@@ -5013,13 +5013,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASolicitarRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEASolicitar", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEASolicitarRequestBody
+        Public Body As wsfev1.FECAEASolicitarRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEASolicitarRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEASolicitarRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5032,7 +5032,7 @@ Namespace ServiceReference1
     Partial Public Class FECAEASolicitarRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
         Public Periodo As Integer
@@ -5044,7 +5044,7 @@ Namespace ServiceReference1
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short)
             MyBase.New
             Me.Auth = Auth
             Me.Periodo = Periodo
@@ -5059,13 +5059,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASolicitarResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEASolicitarResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEASolicitarResponseBody
+        Public Body As wsfev1.FECAEASolicitarResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEASolicitarResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEASolicitarResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5078,13 +5078,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASolicitarResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECAEASolicitarResult As ServiceReference1.FECAEAGetResponse
+        Public FECAEASolicitarResult As wsfev1.FECAEAGetResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECAEASolicitarResult As ServiceReference1.FECAEAGetResponse)
+        Public Sub New(ByVal FECAEASolicitarResult As wsfev1.FECAEAGetResponse)
             MyBase.New
             Me.FECAEASolicitarResult = FECAEASolicitarResult
         End Sub
@@ -5097,13 +5097,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoConsultarRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEASinMovimientoConsultar", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEASinMovimientoConsultarRequestBody
+        Public Body As wsfev1.FECAEASinMovimientoConsultarRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEASinMovimientoConsultarRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEASinMovimientoConsultarRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5116,7 +5116,7 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoConsultarRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
         Public CAEA As String
@@ -5128,7 +5128,7 @@ Namespace ServiceReference1
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal CAEA As String, ByVal PtoVta As Integer)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal CAEA As String, ByVal PtoVta As Integer)
             MyBase.New
             Me.Auth = Auth
             Me.CAEA = CAEA
@@ -5143,13 +5143,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoConsultarResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEASinMovimientoConsultarResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEASinMovimientoConsultarResponseBody
+        Public Body As wsfev1.FECAEASinMovimientoConsultarResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEASinMovimientoConsultarResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEASinMovimientoConsultarResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5162,13 +5162,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoConsultarResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECAEASinMovimientoConsultarResult As ServiceReference1.FECAEASinMovConsResponse
+        Public FECAEASinMovimientoConsultarResult As wsfev1.FECAEASinMovConsResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECAEASinMovimientoConsultarResult As ServiceReference1.FECAEASinMovConsResponse)
+        Public Sub New(ByVal FECAEASinMovimientoConsultarResult As wsfev1.FECAEASinMovConsResponse)
             MyBase.New
             Me.FECAEASinMovimientoConsultarResult = FECAEASinMovimientoConsultarResult
         End Sub
@@ -5181,13 +5181,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoInformarRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEASinMovimientoInformar", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEASinMovimientoInformarRequestBody
+        Public Body As wsfev1.FECAEASinMovimientoInformarRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEASinMovimientoInformarRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEASinMovimientoInformarRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5200,7 +5200,7 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoInformarRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
         Public PtoVta As Integer
@@ -5212,7 +5212,7 @@ Namespace ServiceReference1
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CAEA As String)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CAEA As String)
             MyBase.New
             Me.Auth = Auth
             Me.PtoVta = PtoVta
@@ -5227,13 +5227,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoInformarResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEASinMovimientoInformarResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEASinMovimientoInformarResponseBody
+        Public Body As wsfev1.FECAEASinMovimientoInformarResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEASinMovimientoInformarResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEASinMovimientoInformarResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5246,13 +5246,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEASinMovimientoInformarResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECAEASinMovimientoInformarResult As ServiceReference1.FECAEASinMovResponse
+        Public FECAEASinMovimientoInformarResult As wsfev1.FECAEASinMovResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECAEASinMovimientoInformarResult As ServiceReference1.FECAEASinMovResponse)
+        Public Sub New(ByVal FECAEASinMovimientoInformarResult As wsfev1.FECAEASinMovResponse)
             MyBase.New
             Me.FECAEASinMovimientoInformarResult = FECAEASinMovimientoInformarResult
         End Sub
@@ -5265,13 +5265,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEAConsultarRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEAConsultar", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEAConsultarRequestBody
+        Public Body As wsfev1.FECAEAConsultarRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEAConsultarRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEAConsultarRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5284,7 +5284,7 @@ Namespace ServiceReference1
     Partial Public Class FECAEAConsultarRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(Order:=1)>  _
         Public Periodo As Integer
@@ -5296,7 +5296,7 @@ Namespace ServiceReference1
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short)
             MyBase.New
             Me.Auth = Auth
             Me.Periodo = Periodo
@@ -5311,13 +5311,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEAConsultarResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FECAEAConsultarResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FECAEAConsultarResponseBody
+        Public Body As wsfev1.FECAEAConsultarResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FECAEAConsultarResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FECAEAConsultarResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5330,13 +5330,13 @@ Namespace ServiceReference1
     Partial Public Class FECAEAConsultarResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FECAEAConsultarResult As ServiceReference1.FECAEAGetResponse
+        Public FECAEAConsultarResult As wsfev1.FECAEAGetResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FECAEAConsultarResult As ServiceReference1.FECAEAGetResponse)
+        Public Sub New(ByVal FECAEAConsultarResult As wsfev1.FECAEAGetResponse)
             MyBase.New
             Me.FECAEAConsultarResult = FECAEAConsultarResult
         End Sub
@@ -5349,13 +5349,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetCotizacionRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetCotizacion", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetCotizacionRequestBody
+        Public Body As wsfev1.FEParamGetCotizacionRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetCotizacionRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetCotizacionRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5368,7 +5368,7 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetCotizacionRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=1)>  _
         Public MonId As String
@@ -5377,7 +5377,7 @@ Namespace ServiceReference1
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal MonId As String)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest, ByVal MonId As String)
             MyBase.New
             Me.Auth = Auth
             Me.MonId = MonId
@@ -5391,13 +5391,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetCotizacionResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetCotizacionResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetCotizacionResponseBody
+        Public Body As wsfev1.FEParamGetCotizacionResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetCotizacionResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetCotizacionResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5410,13 +5410,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetCotizacionResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetCotizacionResult As ServiceReference1.FECotizacionResponse
+        Public FEParamGetCotizacionResult As wsfev1.FECotizacionResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetCotizacionResult As ServiceReference1.FECotizacionResponse)
+        Public Sub New(ByVal FEParamGetCotizacionResult As wsfev1.FECotizacionResponse)
             MyBase.New
             Me.FEParamGetCotizacionResult = FEParamGetCotizacionResult
         End Sub
@@ -5429,13 +5429,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposTributosRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposTributos", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposTributosRequestBody
+        Public Body As wsfev1.FEParamGetTiposTributosRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposTributosRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposTributosRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5448,13 +5448,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposTributosRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5467,13 +5467,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposTributosResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposTributosResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposTributosResponseBody
+        Public Body As wsfev1.FEParamGetTiposTributosResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposTributosResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposTributosResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5486,13 +5486,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposTributosResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposTributosResult As ServiceReference1.FETributoResponse
+        Public FEParamGetTiposTributosResult As wsfev1.FETributoResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposTributosResult As ServiceReference1.FETributoResponse)
+        Public Sub New(ByVal FEParamGetTiposTributosResult As wsfev1.FETributoResponse)
             MyBase.New
             Me.FEParamGetTiposTributosResult = FEParamGetTiposTributosResult
         End Sub
@@ -5505,13 +5505,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposMonedasRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposMonedas", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposMonedasRequestBody
+        Public Body As wsfev1.FEParamGetTiposMonedasRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposMonedasRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposMonedasRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5524,13 +5524,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposMonedasRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5543,13 +5543,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposMonedasResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposMonedasResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposMonedasResponseBody
+        Public Body As wsfev1.FEParamGetTiposMonedasResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposMonedasResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposMonedasResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5562,13 +5562,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposMonedasResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposMonedasResult As ServiceReference1.MonedaResponse
+        Public FEParamGetTiposMonedasResult As wsfev1.MonedaResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposMonedasResult As ServiceReference1.MonedaResponse)
+        Public Sub New(ByVal FEParamGetTiposMonedasResult As wsfev1.MonedaResponse)
             MyBase.New
             Me.FEParamGetTiposMonedasResult = FEParamGetTiposMonedasResult
         End Sub
@@ -5581,13 +5581,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposIvaRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposIva", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposIvaRequestBody
+        Public Body As wsfev1.FEParamGetTiposIvaRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposIvaRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposIvaRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5600,13 +5600,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposIvaRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5619,13 +5619,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposIvaResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposIvaResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposIvaResponseBody
+        Public Body As wsfev1.FEParamGetTiposIvaResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposIvaResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposIvaResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5638,13 +5638,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposIvaResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposIvaResult As ServiceReference1.IvaTipoResponse
+        Public FEParamGetTiposIvaResult As wsfev1.IvaTipoResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposIvaResult As ServiceReference1.IvaTipoResponse)
+        Public Sub New(ByVal FEParamGetTiposIvaResult As wsfev1.IvaTipoResponse)
             MyBase.New
             Me.FEParamGetTiposIvaResult = FEParamGetTiposIvaResult
         End Sub
@@ -5657,13 +5657,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposOpcionalRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposOpcional", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposOpcionalRequestBody
+        Public Body As wsfev1.FEParamGetTiposOpcionalRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposOpcionalRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposOpcionalRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5676,13 +5676,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposOpcionalRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5695,13 +5695,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposOpcionalResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposOpcionalResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposOpcionalResponseBody
+        Public Body As wsfev1.FEParamGetTiposOpcionalResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposOpcionalResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposOpcionalResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5714,13 +5714,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposOpcionalResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposOpcionalResult As ServiceReference1.OpcionalTipoResponse
+        Public FEParamGetTiposOpcionalResult As wsfev1.OpcionalTipoResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposOpcionalResult As ServiceReference1.OpcionalTipoResponse)
+        Public Sub New(ByVal FEParamGetTiposOpcionalResult As wsfev1.OpcionalTipoResponse)
             MyBase.New
             Me.FEParamGetTiposOpcionalResult = FEParamGetTiposOpcionalResult
         End Sub
@@ -5733,13 +5733,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposConceptoRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposConcepto", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposConceptoRequestBody
+        Public Body As wsfev1.FEParamGetTiposConceptoRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposConceptoRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposConceptoRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5752,13 +5752,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposConceptoRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5771,13 +5771,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposConceptoResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposConceptoResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposConceptoResponseBody
+        Public Body As wsfev1.FEParamGetTiposConceptoResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposConceptoResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposConceptoResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5790,13 +5790,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposConceptoResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposConceptoResult As ServiceReference1.ConceptoTipoResponse
+        Public FEParamGetTiposConceptoResult As wsfev1.ConceptoTipoResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposConceptoResult As ServiceReference1.ConceptoTipoResponse)
+        Public Sub New(ByVal FEParamGetTiposConceptoResult As wsfev1.ConceptoTipoResponse)
             MyBase.New
             Me.FEParamGetTiposConceptoResult = FEParamGetTiposConceptoResult
         End Sub
@@ -5809,13 +5809,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetPtosVentaRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetPtosVenta", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetPtosVentaRequestBody
+        Public Body As wsfev1.FEParamGetPtosVentaRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetPtosVentaRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetPtosVentaRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5828,13 +5828,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetPtosVentaRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5847,13 +5847,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetPtosVentaResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetPtosVentaResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetPtosVentaResponseBody
+        Public Body As wsfev1.FEParamGetPtosVentaResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetPtosVentaResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetPtosVentaResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5866,13 +5866,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetPtosVentaResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetPtosVentaResult As ServiceReference1.FEPtoVentaResponse
+        Public FEParamGetPtosVentaResult As wsfev1.FEPtoVentaResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetPtosVentaResult As ServiceReference1.FEPtoVentaResponse)
+        Public Sub New(ByVal FEParamGetPtosVentaResult As wsfev1.FEPtoVentaResponse)
             MyBase.New
             Me.FEParamGetPtosVentaResult = FEParamGetPtosVentaResult
         End Sub
@@ -5885,13 +5885,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposCbteRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposCbte", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposCbteRequestBody
+        Public Body As wsfev1.FEParamGetTiposCbteRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposCbteRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposCbteRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5904,13 +5904,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposCbteRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5923,13 +5923,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposCbteResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposCbteResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposCbteResponseBody
+        Public Body As wsfev1.FEParamGetTiposCbteResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposCbteResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposCbteResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5942,13 +5942,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposCbteResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposCbteResult As ServiceReference1.CbteTipoResponse
+        Public FEParamGetTiposCbteResult As wsfev1.CbteTipoResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposCbteResult As ServiceReference1.CbteTipoResponse)
+        Public Sub New(ByVal FEParamGetTiposCbteResult As wsfev1.CbteTipoResponse)
             MyBase.New
             Me.FEParamGetTiposCbteResult = FEParamGetTiposCbteResult
         End Sub
@@ -5961,13 +5961,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposDocRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposDoc", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposDocRequestBody
+        Public Body As wsfev1.FEParamGetTiposDocRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposDocRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposDocRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -5980,13 +5980,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposDocRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -5999,13 +5999,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposDocResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposDocResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposDocResponseBody
+        Public Body As wsfev1.FEParamGetTiposDocResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposDocResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposDocResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -6018,13 +6018,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposDocResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposDocResult As ServiceReference1.DocTipoResponse
+        Public FEParamGetTiposDocResult As wsfev1.DocTipoResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposDocResult As ServiceReference1.DocTipoResponse)
+        Public Sub New(ByVal FEParamGetTiposDocResult As wsfev1.DocTipoResponse)
             MyBase.New
             Me.FEParamGetTiposDocResult = FEParamGetTiposDocResult
         End Sub
@@ -6037,13 +6037,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposPaisesRequest
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposPaises", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposPaisesRequestBody
+        Public Body As wsfev1.FEParamGetTiposPaisesRequestBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposPaisesRequestBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposPaisesRequestBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -6056,13 +6056,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposPaisesRequestBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public Auth As ServiceReference1.FEAuthRequest
+        Public Auth As wsfev1.FEAuthRequest
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Auth As ServiceReference1.FEAuthRequest)
+        Public Sub New(ByVal Auth As wsfev1.FEAuthRequest)
             MyBase.New
             Me.Auth = Auth
         End Sub
@@ -6075,13 +6075,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposPaisesResponse
         
         <System.ServiceModel.MessageBodyMemberAttribute(Name:="FEParamGetTiposPaisesResponse", [Namespace]:="http://ar.gov.afip.dif.FEV1/", Order:=0)>  _
-        Public Body As ServiceReference1.FEParamGetTiposPaisesResponseBody
+        Public Body As wsfev1.FEParamGetTiposPaisesResponseBody
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal Body As ServiceReference1.FEParamGetTiposPaisesResponseBody)
+        Public Sub New(ByVal Body As wsfev1.FEParamGetTiposPaisesResponseBody)
             MyBase.New
             Me.Body = Body
         End Sub
@@ -6094,13 +6094,13 @@ Namespace ServiceReference1
     Partial Public Class FEParamGetTiposPaisesResponseBody
         
         <System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue:=false, Order:=0)>  _
-        Public FEParamGetTiposPaisesResult As ServiceReference1.FEPaisResponse
+        Public FEParamGetTiposPaisesResult As wsfev1.FEPaisResponse
         
         Public Sub New()
             MyBase.New
         End Sub
         
-        Public Sub New(ByVal FEParamGetTiposPaisesResult As ServiceReference1.FEPaisResponse)
+        Public Sub New(ByVal FEParamGetTiposPaisesResult As wsfev1.FEPaisResponse)
             MyBase.New
             Me.FEParamGetTiposPaisesResult = FEParamGetTiposPaisesResult
         End Sub
@@ -6108,14 +6108,14 @@ Namespace ServiceReference1
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
     Public Interface ServiceSoapChannel
-        Inherits ServiceReference1.ServiceSoap, System.ServiceModel.IClientChannel
+        Inherits wsfev1.ServiceSoap, System.ServiceModel.IClientChannel
     End Interface
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
     Partial Public Class ServiceSoapClient
-        Inherits System.ServiceModel.ClientBase(Of ServiceReference1.ServiceSoap)
-        Implements ServiceReference1.ServiceSoap
+        Inherits System.ServiceModel.ClientBase(Of wsfev1.ServiceSoap)
+        Implements wsfev1.ServiceSoap
         
         Public Sub New()
             MyBase.New
@@ -6138,275 +6138,275 @@ Namespace ServiceReference1
         End Sub
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECAESolicitar(ByVal request As ServiceReference1.FECAESolicitarRequest) As ServiceReference1.FECAESolicitarResponse Implements ServiceReference1.ServiceSoap.FECAESolicitar
+        Function wsfev1_ServiceSoap_FECAESolicitar(ByVal request As wsfev1.FECAESolicitarRequest) As wsfev1.FECAESolicitarResponse Implements wsfev1.ServiceSoap.FECAESolicitar
             Return MyBase.Channel.FECAESolicitar(request)
         End Function
         
-        Public Function FECAESolicitar(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal FeCAEReq As ServiceReference1.FECAERequest) As ServiceReference1.FECAEResponse
-            Dim inValue As ServiceReference1.FECAESolicitarRequest = New ServiceReference1.FECAESolicitarRequest()
-            inValue.Body = New ServiceReference1.FECAESolicitarRequestBody()
+        Public Function FECAESolicitar(ByVal Auth As wsfev1.FEAuthRequest, ByVal FeCAEReq As wsfev1.FECAERequest) As wsfev1.FECAEResponse
+            Dim inValue As wsfev1.FECAESolicitarRequest = New wsfev1.FECAESolicitarRequest()
+            inValue.Body = New wsfev1.FECAESolicitarRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.FeCAEReq = FeCAEReq
-            Dim retVal As ServiceReference1.FECAESolicitarResponse = CType(Me,ServiceReference1.ServiceSoap).FECAESolicitar(inValue)
+            Dim retVal As wsfev1.FECAESolicitarResponse = CType(Me,wsfev1.ServiceSoap).FECAESolicitar(inValue)
             Return retVal.Body.FECAESolicitarResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECompTotXRequest(ByVal request As ServiceReference1.FECompTotXRequestRequest) As ServiceReference1.FECompTotXRequestResponse Implements ServiceReference1.ServiceSoap.FECompTotXRequest
+        Function wsfev1_ServiceSoap_FECompTotXRequest(ByVal request As wsfev1.FECompTotXRequestRequest) As wsfev1.FECompTotXRequestResponse Implements wsfev1.ServiceSoap.FECompTotXRequest
             Return MyBase.Channel.FECompTotXRequest(request)
         End Function
         
-        Public Function FECompTotXRequest(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.FERegXReqResponse
-            Dim inValue As ServiceReference1.FECompTotXRequestRequest = New ServiceReference1.FECompTotXRequestRequest()
-            inValue.Body = New ServiceReference1.FECompTotXRequestRequestBody()
+        Public Function FECompTotXRequest(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.FERegXReqResponse
+            Dim inValue As wsfev1.FECompTotXRequestRequest = New wsfev1.FECompTotXRequestRequest()
+            inValue.Body = New wsfev1.FECompTotXRequestRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FECompTotXRequestResponse = CType(Me,ServiceReference1.ServiceSoap).FECompTotXRequest(inValue)
+            Dim retVal As wsfev1.FECompTotXRequestResponse = CType(Me,wsfev1.ServiceSoap).FECompTotXRequest(inValue)
             Return retVal.Body.FECompTotXRequestResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEDummy(ByVal request As ServiceReference1.FEDummyRequest) As ServiceReference1.FEDummyResponse Implements ServiceReference1.ServiceSoap.FEDummy
+        Function wsfev1_ServiceSoap_FEDummy(ByVal request As wsfev1.FEDummyRequest) As wsfev1.FEDummyResponse Implements wsfev1.ServiceSoap.FEDummy
             Return MyBase.Channel.FEDummy(request)
         End Function
         
-        Public Function FEDummy() As ServiceReference1.DummyResponse
-            Dim inValue As ServiceReference1.FEDummyRequest = New ServiceReference1.FEDummyRequest()
-            inValue.Body = New ServiceReference1.FEDummyRequestBody()
-            Dim retVal As ServiceReference1.FEDummyResponse = CType(Me,ServiceReference1.ServiceSoap).FEDummy(inValue)
+        Public Function FEDummy() As wsfev1.DummyResponse
+            Dim inValue As wsfev1.FEDummyRequest = New wsfev1.FEDummyRequest()
+            inValue.Body = New wsfev1.FEDummyRequestBody()
+            Dim retVal As wsfev1.FEDummyResponse = CType(Me,wsfev1.ServiceSoap).FEDummy(inValue)
             Return retVal.Body.FEDummyResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECompUltimoAutorizado(ByVal request As ServiceReference1.FECompUltimoAutorizadoRequest) As ServiceReference1.FECompUltimoAutorizadoResponse Implements ServiceReference1.ServiceSoap.FECompUltimoAutorizado
+        Function wsfev1_ServiceSoap_FECompUltimoAutorizado(ByVal request As wsfev1.FECompUltimoAutorizadoRequest) As wsfev1.FECompUltimoAutorizadoResponse Implements wsfev1.ServiceSoap.FECompUltimoAutorizado
             Return MyBase.Channel.FECompUltimoAutorizado(request)
         End Function
         
-        Public Function FECompUltimoAutorizado(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CbteTipo As Integer) As ServiceReference1.FERecuperaLastCbteResponse
-            Dim inValue As ServiceReference1.FECompUltimoAutorizadoRequest = New ServiceReference1.FECompUltimoAutorizadoRequest()
-            inValue.Body = New ServiceReference1.FECompUltimoAutorizadoRequestBody()
+        Public Function FECompUltimoAutorizado(ByVal Auth As wsfev1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CbteTipo As Integer) As wsfev1.FERecuperaLastCbteResponse
+            Dim inValue As wsfev1.FECompUltimoAutorizadoRequest = New wsfev1.FECompUltimoAutorizadoRequest()
+            inValue.Body = New wsfev1.FECompUltimoAutorizadoRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.PtoVta = PtoVta
             inValue.Body.CbteTipo = CbteTipo
-            Dim retVal As ServiceReference1.FECompUltimoAutorizadoResponse = CType(Me,ServiceReference1.ServiceSoap).FECompUltimoAutorizado(inValue)
+            Dim retVal As wsfev1.FECompUltimoAutorizadoResponse = CType(Me,wsfev1.ServiceSoap).FECompUltimoAutorizado(inValue)
             Return retVal.Body.FECompUltimoAutorizadoResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECompConsultar(ByVal request As ServiceReference1.FECompConsultarRequest) As ServiceReference1.FECompConsultarResponse Implements ServiceReference1.ServiceSoap.FECompConsultar
+        Function wsfev1_ServiceSoap_FECompConsultar(ByVal request As wsfev1.FECompConsultarRequest) As wsfev1.FECompConsultarResponse Implements wsfev1.ServiceSoap.FECompConsultar
             Return MyBase.Channel.FECompConsultar(request)
         End Function
         
-        Public Function FECompConsultar(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal FeCompConsReq As ServiceReference1.FECompConsultaReq) As ServiceReference1.FECompConsultaResponse
-            Dim inValue As ServiceReference1.FECompConsultarRequest = New ServiceReference1.FECompConsultarRequest()
-            inValue.Body = New ServiceReference1.FECompConsultarRequestBody()
+        Public Function FECompConsultar(ByVal Auth As wsfev1.FEAuthRequest, ByVal FeCompConsReq As wsfev1.FECompConsultaReq) As wsfev1.FECompConsultaResponse
+            Dim inValue As wsfev1.FECompConsultarRequest = New wsfev1.FECompConsultarRequest()
+            inValue.Body = New wsfev1.FECompConsultarRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.FeCompConsReq = FeCompConsReq
-            Dim retVal As ServiceReference1.FECompConsultarResponse = CType(Me,ServiceReference1.ServiceSoap).FECompConsultar(inValue)
+            Dim retVal As wsfev1.FECompConsultarResponse = CType(Me,wsfev1.ServiceSoap).FECompConsultar(inValue)
             Return retVal.Body.FECompConsultarResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECAEARegInformativo(ByVal request As ServiceReference1.FECAEARegInformativoRequest) As ServiceReference1.FECAEARegInformativoResponse Implements ServiceReference1.ServiceSoap.FECAEARegInformativo
+        Function wsfev1_ServiceSoap_FECAEARegInformativo(ByVal request As wsfev1.FECAEARegInformativoRequest) As wsfev1.FECAEARegInformativoResponse Implements wsfev1.ServiceSoap.FECAEARegInformativo
             Return MyBase.Channel.FECAEARegInformativo(request)
         End Function
         
-        Public Function FECAEARegInformativo(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal FeCAEARegInfReq As ServiceReference1.FECAEARequest) As ServiceReference1.FECAEAResponse
-            Dim inValue As ServiceReference1.FECAEARegInformativoRequest = New ServiceReference1.FECAEARegInformativoRequest()
-            inValue.Body = New ServiceReference1.FECAEARegInformativoRequestBody()
+        Public Function FECAEARegInformativo(ByVal Auth As wsfev1.FEAuthRequest, ByVal FeCAEARegInfReq As wsfev1.FECAEARequest) As wsfev1.FECAEAResponse
+            Dim inValue As wsfev1.FECAEARegInformativoRequest = New wsfev1.FECAEARegInformativoRequest()
+            inValue.Body = New wsfev1.FECAEARegInformativoRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.FeCAEARegInfReq = FeCAEARegInfReq
-            Dim retVal As ServiceReference1.FECAEARegInformativoResponse = CType(Me,ServiceReference1.ServiceSoap).FECAEARegInformativo(inValue)
+            Dim retVal As wsfev1.FECAEARegInformativoResponse = CType(Me,wsfev1.ServiceSoap).FECAEARegInformativo(inValue)
             Return retVal.Body.FECAEARegInformativoResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECAEASolicitar(ByVal request As ServiceReference1.FECAEASolicitarRequest) As ServiceReference1.FECAEASolicitarResponse Implements ServiceReference1.ServiceSoap.FECAEASolicitar
+        Function wsfev1_ServiceSoap_FECAEASolicitar(ByVal request As wsfev1.FECAEASolicitarRequest) As wsfev1.FECAEASolicitarResponse Implements wsfev1.ServiceSoap.FECAEASolicitar
             Return MyBase.Channel.FECAEASolicitar(request)
         End Function
         
-        Public Function FECAEASolicitar(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short) As ServiceReference1.FECAEAGetResponse
-            Dim inValue As ServiceReference1.FECAEASolicitarRequest = New ServiceReference1.FECAEASolicitarRequest()
-            inValue.Body = New ServiceReference1.FECAEASolicitarRequestBody()
+        Public Function FECAEASolicitar(ByVal Auth As wsfev1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short) As wsfev1.FECAEAGetResponse
+            Dim inValue As wsfev1.FECAEASolicitarRequest = New wsfev1.FECAEASolicitarRequest()
+            inValue.Body = New wsfev1.FECAEASolicitarRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.Periodo = Periodo
             inValue.Body.Orden = Orden
-            Dim retVal As ServiceReference1.FECAEASolicitarResponse = CType(Me,ServiceReference1.ServiceSoap).FECAEASolicitar(inValue)
+            Dim retVal As wsfev1.FECAEASolicitarResponse = CType(Me,wsfev1.ServiceSoap).FECAEASolicitar(inValue)
             Return retVal.Body.FECAEASolicitarResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECAEASinMovimientoConsultar(ByVal request As ServiceReference1.FECAEASinMovimientoConsultarRequest) As ServiceReference1.FECAEASinMovimientoConsultarResponse Implements ServiceReference1.ServiceSoap.FECAEASinMovimientoConsultar
+        Function wsfev1_ServiceSoap_FECAEASinMovimientoConsultar(ByVal request As wsfev1.FECAEASinMovimientoConsultarRequest) As wsfev1.FECAEASinMovimientoConsultarResponse Implements wsfev1.ServiceSoap.FECAEASinMovimientoConsultar
             Return MyBase.Channel.FECAEASinMovimientoConsultar(request)
         End Function
         
-        Public Function FECAEASinMovimientoConsultar(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal CAEA As String, ByVal PtoVta As Integer) As ServiceReference1.FECAEASinMovConsResponse
-            Dim inValue As ServiceReference1.FECAEASinMovimientoConsultarRequest = New ServiceReference1.FECAEASinMovimientoConsultarRequest()
-            inValue.Body = New ServiceReference1.FECAEASinMovimientoConsultarRequestBody()
+        Public Function FECAEASinMovimientoConsultar(ByVal Auth As wsfev1.FEAuthRequest, ByVal CAEA As String, ByVal PtoVta As Integer) As wsfev1.FECAEASinMovConsResponse
+            Dim inValue As wsfev1.FECAEASinMovimientoConsultarRequest = New wsfev1.FECAEASinMovimientoConsultarRequest()
+            inValue.Body = New wsfev1.FECAEASinMovimientoConsultarRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.CAEA = CAEA
             inValue.Body.PtoVta = PtoVta
-            Dim retVal As ServiceReference1.FECAEASinMovimientoConsultarResponse = CType(Me,ServiceReference1.ServiceSoap).FECAEASinMovimientoConsultar(inValue)
+            Dim retVal As wsfev1.FECAEASinMovimientoConsultarResponse = CType(Me,wsfev1.ServiceSoap).FECAEASinMovimientoConsultar(inValue)
             Return retVal.Body.FECAEASinMovimientoConsultarResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECAEASinMovimientoInformar(ByVal request As ServiceReference1.FECAEASinMovimientoInformarRequest) As ServiceReference1.FECAEASinMovimientoInformarResponse Implements ServiceReference1.ServiceSoap.FECAEASinMovimientoInformar
+        Function wsfev1_ServiceSoap_FECAEASinMovimientoInformar(ByVal request As wsfev1.FECAEASinMovimientoInformarRequest) As wsfev1.FECAEASinMovimientoInformarResponse Implements wsfev1.ServiceSoap.FECAEASinMovimientoInformar
             Return MyBase.Channel.FECAEASinMovimientoInformar(request)
         End Function
         
-        Public Function FECAEASinMovimientoInformar(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CAEA As String) As ServiceReference1.FECAEASinMovResponse
-            Dim inValue As ServiceReference1.FECAEASinMovimientoInformarRequest = New ServiceReference1.FECAEASinMovimientoInformarRequest()
-            inValue.Body = New ServiceReference1.FECAEASinMovimientoInformarRequestBody()
+        Public Function FECAEASinMovimientoInformar(ByVal Auth As wsfev1.FEAuthRequest, ByVal PtoVta As Integer, ByVal CAEA As String) As wsfev1.FECAEASinMovResponse
+            Dim inValue As wsfev1.FECAEASinMovimientoInformarRequest = New wsfev1.FECAEASinMovimientoInformarRequest()
+            inValue.Body = New wsfev1.FECAEASinMovimientoInformarRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.PtoVta = PtoVta
             inValue.Body.CAEA = CAEA
-            Dim retVal As ServiceReference1.FECAEASinMovimientoInformarResponse = CType(Me,ServiceReference1.ServiceSoap).FECAEASinMovimientoInformar(inValue)
+            Dim retVal As wsfev1.FECAEASinMovimientoInformarResponse = CType(Me,wsfev1.ServiceSoap).FECAEASinMovimientoInformar(inValue)
             Return retVal.Body.FECAEASinMovimientoInformarResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FECAEAConsultar(ByVal request As ServiceReference1.FECAEAConsultarRequest) As ServiceReference1.FECAEAConsultarResponse Implements ServiceReference1.ServiceSoap.FECAEAConsultar
+        Function wsfev1_ServiceSoap_FECAEAConsultar(ByVal request As wsfev1.FECAEAConsultarRequest) As wsfev1.FECAEAConsultarResponse Implements wsfev1.ServiceSoap.FECAEAConsultar
             Return MyBase.Channel.FECAEAConsultar(request)
         End Function
         
-        Public Function FECAEAConsultar(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short) As ServiceReference1.FECAEAGetResponse
-            Dim inValue As ServiceReference1.FECAEAConsultarRequest = New ServiceReference1.FECAEAConsultarRequest()
-            inValue.Body = New ServiceReference1.FECAEAConsultarRequestBody()
+        Public Function FECAEAConsultar(ByVal Auth As wsfev1.FEAuthRequest, ByVal Periodo As Integer, ByVal Orden As Short) As wsfev1.FECAEAGetResponse
+            Dim inValue As wsfev1.FECAEAConsultarRequest = New wsfev1.FECAEAConsultarRequest()
+            inValue.Body = New wsfev1.FECAEAConsultarRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.Periodo = Periodo
             inValue.Body.Orden = Orden
-            Dim retVal As ServiceReference1.FECAEAConsultarResponse = CType(Me,ServiceReference1.ServiceSoap).FECAEAConsultar(inValue)
+            Dim retVal As wsfev1.FECAEAConsultarResponse = CType(Me,wsfev1.ServiceSoap).FECAEAConsultar(inValue)
             Return retVal.Body.FECAEAConsultarResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetCotizacion(ByVal request As ServiceReference1.FEParamGetCotizacionRequest) As ServiceReference1.FEParamGetCotizacionResponse Implements ServiceReference1.ServiceSoap.FEParamGetCotizacion
+        Function wsfev1_ServiceSoap_FEParamGetCotizacion(ByVal request As wsfev1.FEParamGetCotizacionRequest) As wsfev1.FEParamGetCotizacionResponse Implements wsfev1.ServiceSoap.FEParamGetCotizacion
             Return MyBase.Channel.FEParamGetCotizacion(request)
         End Function
         
-        Public Function FEParamGetCotizacion(ByVal Auth As ServiceReference1.FEAuthRequest, ByVal MonId As String) As ServiceReference1.FECotizacionResponse
-            Dim inValue As ServiceReference1.FEParamGetCotizacionRequest = New ServiceReference1.FEParamGetCotizacionRequest()
-            inValue.Body = New ServiceReference1.FEParamGetCotizacionRequestBody()
+        Public Function FEParamGetCotizacion(ByVal Auth As wsfev1.FEAuthRequest, ByVal MonId As String) As wsfev1.FECotizacionResponse
+            Dim inValue As wsfev1.FEParamGetCotizacionRequest = New wsfev1.FEParamGetCotizacionRequest()
+            inValue.Body = New wsfev1.FEParamGetCotizacionRequestBody()
             inValue.Body.Auth = Auth
             inValue.Body.MonId = MonId
-            Dim retVal As ServiceReference1.FEParamGetCotizacionResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetCotizacion(inValue)
+            Dim retVal As wsfev1.FEParamGetCotizacionResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetCotizacion(inValue)
             Return retVal.Body.FEParamGetCotizacionResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposTributos(ByVal request As ServiceReference1.FEParamGetTiposTributosRequest) As ServiceReference1.FEParamGetTiposTributosResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposTributos
+        Function wsfev1_ServiceSoap_FEParamGetTiposTributos(ByVal request As wsfev1.FEParamGetTiposTributosRequest) As wsfev1.FEParamGetTiposTributosResponse Implements wsfev1.ServiceSoap.FEParamGetTiposTributos
             Return MyBase.Channel.FEParamGetTiposTributos(request)
         End Function
         
-        Public Function FEParamGetTiposTributos(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.FETributoResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposTributosRequest = New ServiceReference1.FEParamGetTiposTributosRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposTributosRequestBody()
+        Public Function FEParamGetTiposTributos(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.FETributoResponse
+            Dim inValue As wsfev1.FEParamGetTiposTributosRequest = New wsfev1.FEParamGetTiposTributosRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposTributosRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposTributosResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposTributos(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposTributosResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposTributos(inValue)
             Return retVal.Body.FEParamGetTiposTributosResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposMonedas(ByVal request As ServiceReference1.FEParamGetTiposMonedasRequest) As ServiceReference1.FEParamGetTiposMonedasResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposMonedas
+        Function wsfev1_ServiceSoap_FEParamGetTiposMonedas(ByVal request As wsfev1.FEParamGetTiposMonedasRequest) As wsfev1.FEParamGetTiposMonedasResponse Implements wsfev1.ServiceSoap.FEParamGetTiposMonedas
             Return MyBase.Channel.FEParamGetTiposMonedas(request)
         End Function
         
-        Public Function FEParamGetTiposMonedas(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.MonedaResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposMonedasRequest = New ServiceReference1.FEParamGetTiposMonedasRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposMonedasRequestBody()
+        Public Function FEParamGetTiposMonedas(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.MonedaResponse
+            Dim inValue As wsfev1.FEParamGetTiposMonedasRequest = New wsfev1.FEParamGetTiposMonedasRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposMonedasRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposMonedasResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposMonedas(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposMonedasResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposMonedas(inValue)
             Return retVal.Body.FEParamGetTiposMonedasResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposIva(ByVal request As ServiceReference1.FEParamGetTiposIvaRequest) As ServiceReference1.FEParamGetTiposIvaResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposIva
+        Function wsfev1_ServiceSoap_FEParamGetTiposIva(ByVal request As wsfev1.FEParamGetTiposIvaRequest) As wsfev1.FEParamGetTiposIvaResponse Implements wsfev1.ServiceSoap.FEParamGetTiposIva
             Return MyBase.Channel.FEParamGetTiposIva(request)
         End Function
         
-        Public Function FEParamGetTiposIva(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.IvaTipoResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposIvaRequest = New ServiceReference1.FEParamGetTiposIvaRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposIvaRequestBody()
+        Public Function FEParamGetTiposIva(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.IvaTipoResponse
+            Dim inValue As wsfev1.FEParamGetTiposIvaRequest = New wsfev1.FEParamGetTiposIvaRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposIvaRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposIvaResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposIva(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposIvaResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposIva(inValue)
             Return retVal.Body.FEParamGetTiposIvaResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposOpcional(ByVal request As ServiceReference1.FEParamGetTiposOpcionalRequest) As ServiceReference1.FEParamGetTiposOpcionalResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposOpcional
+        Function wsfev1_ServiceSoap_FEParamGetTiposOpcional(ByVal request As wsfev1.FEParamGetTiposOpcionalRequest) As wsfev1.FEParamGetTiposOpcionalResponse Implements wsfev1.ServiceSoap.FEParamGetTiposOpcional
             Return MyBase.Channel.FEParamGetTiposOpcional(request)
         End Function
         
-        Public Function FEParamGetTiposOpcional(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.OpcionalTipoResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposOpcionalRequest = New ServiceReference1.FEParamGetTiposOpcionalRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposOpcionalRequestBody()
+        Public Function FEParamGetTiposOpcional(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.OpcionalTipoResponse
+            Dim inValue As wsfev1.FEParamGetTiposOpcionalRequest = New wsfev1.FEParamGetTiposOpcionalRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposOpcionalRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposOpcionalResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposOpcional(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposOpcionalResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposOpcional(inValue)
             Return retVal.Body.FEParamGetTiposOpcionalResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposConcepto(ByVal request As ServiceReference1.FEParamGetTiposConceptoRequest) As ServiceReference1.FEParamGetTiposConceptoResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposConcepto
+        Function wsfev1_ServiceSoap_FEParamGetTiposConcepto(ByVal request As wsfev1.FEParamGetTiposConceptoRequest) As wsfev1.FEParamGetTiposConceptoResponse Implements wsfev1.ServiceSoap.FEParamGetTiposConcepto
             Return MyBase.Channel.FEParamGetTiposConcepto(request)
         End Function
         
-        Public Function FEParamGetTiposConcepto(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.ConceptoTipoResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposConceptoRequest = New ServiceReference1.FEParamGetTiposConceptoRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposConceptoRequestBody()
+        Public Function FEParamGetTiposConcepto(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.ConceptoTipoResponse
+            Dim inValue As wsfev1.FEParamGetTiposConceptoRequest = New wsfev1.FEParamGetTiposConceptoRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposConceptoRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposConceptoResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposConcepto(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposConceptoResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposConcepto(inValue)
             Return retVal.Body.FEParamGetTiposConceptoResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetPtosVenta(ByVal request As ServiceReference1.FEParamGetPtosVentaRequest) As ServiceReference1.FEParamGetPtosVentaResponse Implements ServiceReference1.ServiceSoap.FEParamGetPtosVenta
+        Function wsfev1_ServiceSoap_FEParamGetPtosVenta(ByVal request As wsfev1.FEParamGetPtosVentaRequest) As wsfev1.FEParamGetPtosVentaResponse Implements wsfev1.ServiceSoap.FEParamGetPtosVenta
             Return MyBase.Channel.FEParamGetPtosVenta(request)
         End Function
         
-        Public Function FEParamGetPtosVenta(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.FEPtoVentaResponse
-            Dim inValue As ServiceReference1.FEParamGetPtosVentaRequest = New ServiceReference1.FEParamGetPtosVentaRequest()
-            inValue.Body = New ServiceReference1.FEParamGetPtosVentaRequestBody()
+        Public Function FEParamGetPtosVenta(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.FEPtoVentaResponse
+            Dim inValue As wsfev1.FEParamGetPtosVentaRequest = New wsfev1.FEParamGetPtosVentaRequest()
+            inValue.Body = New wsfev1.FEParamGetPtosVentaRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetPtosVentaResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetPtosVenta(inValue)
+            Dim retVal As wsfev1.FEParamGetPtosVentaResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetPtosVenta(inValue)
             Return retVal.Body.FEParamGetPtosVentaResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposCbte(ByVal request As ServiceReference1.FEParamGetTiposCbteRequest) As ServiceReference1.FEParamGetTiposCbteResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposCbte
+        Function wsfev1_ServiceSoap_FEParamGetTiposCbte(ByVal request As wsfev1.FEParamGetTiposCbteRequest) As wsfev1.FEParamGetTiposCbteResponse Implements wsfev1.ServiceSoap.FEParamGetTiposCbte
             Return MyBase.Channel.FEParamGetTiposCbte(request)
         End Function
         
-        Public Function FEParamGetTiposCbte(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.CbteTipoResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposCbteRequest = New ServiceReference1.FEParamGetTiposCbteRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposCbteRequestBody()
+        Public Function FEParamGetTiposCbte(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.CbteTipoResponse
+            Dim inValue As wsfev1.FEParamGetTiposCbteRequest = New wsfev1.FEParamGetTiposCbteRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposCbteRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposCbteResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposCbte(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposCbteResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposCbte(inValue)
             Return retVal.Body.FEParamGetTiposCbteResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposDoc(ByVal request As ServiceReference1.FEParamGetTiposDocRequest) As ServiceReference1.FEParamGetTiposDocResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposDoc
+        Function wsfev1_ServiceSoap_FEParamGetTiposDoc(ByVal request As wsfev1.FEParamGetTiposDocRequest) As wsfev1.FEParamGetTiposDocResponse Implements wsfev1.ServiceSoap.FEParamGetTiposDoc
             Return MyBase.Channel.FEParamGetTiposDoc(request)
         End Function
         
-        Public Function FEParamGetTiposDoc(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.DocTipoResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposDocRequest = New ServiceReference1.FEParamGetTiposDocRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposDocRequestBody()
+        Public Function FEParamGetTiposDoc(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.DocTipoResponse
+            Dim inValue As wsfev1.FEParamGetTiposDocRequest = New wsfev1.FEParamGetTiposDocRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposDocRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposDocResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposDoc(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposDocResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposDoc(inValue)
             Return retVal.Body.FEParamGetTiposDocResult
         End Function
         
         <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Function ServiceReference1_ServiceSoap_FEParamGetTiposPaises(ByVal request As ServiceReference1.FEParamGetTiposPaisesRequest) As ServiceReference1.FEParamGetTiposPaisesResponse Implements ServiceReference1.ServiceSoap.FEParamGetTiposPaises
+        Function wsfev1_ServiceSoap_FEParamGetTiposPaises(ByVal request As wsfev1.FEParamGetTiposPaisesRequest) As wsfev1.FEParamGetTiposPaisesResponse Implements wsfev1.ServiceSoap.FEParamGetTiposPaises
             Return MyBase.Channel.FEParamGetTiposPaises(request)
         End Function
         
-        Public Function FEParamGetTiposPaises(ByVal Auth As ServiceReference1.FEAuthRequest) As ServiceReference1.FEPaisResponse
-            Dim inValue As ServiceReference1.FEParamGetTiposPaisesRequest = New ServiceReference1.FEParamGetTiposPaisesRequest()
-            inValue.Body = New ServiceReference1.FEParamGetTiposPaisesRequestBody()
+        Public Function FEParamGetTiposPaises(ByVal Auth As wsfev1.FEAuthRequest) As wsfev1.FEPaisResponse
+            Dim inValue As wsfev1.FEParamGetTiposPaisesRequest = New wsfev1.FEParamGetTiposPaisesRequest()
+            inValue.Body = New wsfev1.FEParamGetTiposPaisesRequestBody()
             inValue.Body.Auth = Auth
-            Dim retVal As ServiceReference1.FEParamGetTiposPaisesResponse = CType(Me,ServiceReference1.ServiceSoap).FEParamGetTiposPaises(inValue)
+            Dim retVal As wsfev1.FEParamGetTiposPaisesResponse = CType(Me,wsfev1.ServiceSoap).FEParamGetTiposPaises(inValue)
             Return retVal.Body.FEParamGetTiposPaisesResult
         End Function
     End Class
