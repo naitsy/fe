@@ -4,7 +4,7 @@ Public Class Form1
 
 
     Private Sub btnTest_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTest.Click
-        Dim oSolicitud As Solicitud = Solicitud.CrearSolicitud(1, 1)
+        Dim oSolicitud As Solicitud = Solicitud.CrearSolicitud(txtCUIT.Text.Trim(), 1, 1, txtToken.Text.Trim(), txtFirma.Text.Trim())
         Dim oDetalle As SolicitudDetalle = oSolicitud.CrearDetalle()
 
         With oDetalle
@@ -29,6 +29,7 @@ Public Class Form1
             .AgregarItemTributo(1, "Tributo", 10.5, 1500, 200)
         End With
         oSolicitud.ListaDetalles.Add(oDetalle)
+        txtResponse.Text = oSolicitud.Presentar()
 
 
     End Sub

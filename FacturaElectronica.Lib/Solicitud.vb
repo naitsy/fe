@@ -1,13 +1,21 @@
-﻿Public Class Solicitud
+﻿Imports Microsoft.VisualBasic.FileIO.FileSystem
+Imports System.Xml
+Imports System.Xml.Serialization
+Imports System.IO
+
+Public Class Solicitud
 
     '<FeCabReq> 
     '    <CantReg>int</CantReg>
     '    <PtoVta>int</PtoVta> 
     '    <CbteTipo>int</CbteTipo> 
     '</FeCabReq>
+    Private _cuit As String
     Private _puntoDeVenta As Integer
     Private _tipoComprobante As Integer 'enum ??
     Private _listDetalles As New List(Of SolicitudDetalle)
+    Private _token As String
+    Private _firma As String
 
     Public ReadOnly Property PuntoDeVenta() As Integer
         Get
@@ -27,26 +35,43 @@
         End Get
     End Property
 
-    Private Sub New(ByVal pPuntoDeVenta As Integer, ByVal pTipoComprobante As Integer)
+    Private Sub New(ByVal pCuit As String, _
+                    ByVal pPuntoDeVenta As Integer, _
+                    ByVal pTipoComprobante As Integer, _
+                    ByVal pToken As String, _
+                    ByVal pFirma As String)
+        _cuit = pCuit
         _puntoDeVenta = pPuntoDeVenta
         _tipoComprobante = pTipoComprobante
+        _token = pToken
+        _firma = pFirma
     End Sub
 
-    Public Shared Function CrearSolicitud(ByVal pPuntoDeVenta As Integer, ByVal pTipoComprobante As Integer) As Solicitud
-        Return New Solicitud(pPuntoDeVenta, pTipoComprobante)
+    'Public Shared Function CrearSolicitud(ByVal pPuntoDeVenta As Integer, _
+    '                                      ByVal pTipoComprobante As Integer) As Solicitud
+    '    Return New Solicitud(pPuntoDeVenta, pTipoComprobante)
+    'End Function
+
+    Public Shared Function CrearSolicitud(ByVal pCuit As String, _
+                                          ByVal pPuntoDeVenta As Integer, _
+                                          ByVal pTipoComprobante As Integer, _
+                                          ByVal pToken As String, _
+                                          ByVal pFirma As String) As Solicitud
+        Return New Solicitud(pCuit, pPuntoDeVenta, pTipoComprobante, pToken, pFirma)
     End Function
 
     Public Function CrearDetalle() As SolicitudDetalle
         Return New SolicitudDetalle()
     End Function
 
-    Public Sub Presentar()
-        Dim objWSFEV1 As New wsfev1.ServiceSoapClient
+    Public Function Presentar() As String
+        Dim objWSFEV1 As New wsfev1.Service()
+        objWSFEV1.Url = Cfg.UrlServicio()
         Dim FEAuthRequest As New wsfev1.FEAuthRequest
 
-        FEAuthRequest.Token = ""
-        FEAuthRequest.Sign = ""
-        FEAuthRequest.Cuit = ""
+        FEAuthRequest.Token = _token ' "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgdW5pcXVlX2lkPSI0MjM1MDE0NzI3IiBzcmM9IkNOPXdzYWFob21vLCBPPUFGSVAsIEM9QVIsIFNFUklBTE5VTUJFUj1DVUlUIDMzNjkzNDUwMjM5IiBnZW5fdGltZT0iMTQzMzY5MTAzNiIgZXhwX3RpbWU9IjE0MzM3MzQyOTYiIGRzdD0iQ049d3NmZSwgTz1BRklQLCBDPUFSIi8+CiAgICA8b3BlcmF0aW9uIHZhbHVlPSJncmFudGVkIiB0eXBlPSJsb2dpbiI+CiAgICAgICAgPGxvZ2luIHVpZD0iQz1hciwgTz1tYXJpYW5vIHZlbmVydXMsIFNFUklBTE5VTUJFUj1DVUlUIDIwMjUzMTQwMjg0LCBDTj1hZmlwLXdzIiBzZXJ2aWNlPSJ3c2ZlIiByZWdtZXRob2Q9IjIyIiBlbnRpdHk9IjMzNjkzNDUwMjM5IiBhdXRobWV0aG9kPSJjbXMiPgogICAgICAgICAgICA8cmVsYXRpb25zPgogICAgICAgICAgICAgICAgPHJlbGF0aW9uIHJlbHR5cGU9IjQiIGtleT0iMjAyNTMxNDAyODQiLz4KICAgICAgICAgICAgPC9yZWxhdGlvbnM+CiAgICAgICAgPC9sb2dpbj4KICAgIDwvb3BlcmF0aW9uPgo8L3Nzbz4KCg=="
+        FEAuthRequest.Sign = _firma ' "LCGD/l71xfK04qXhillVc9yelz0sFg8ixsQodoBcbK8InvKlkD6Qda7Jr09ng/l7F+ND7rrWilzzCGHYBJrYrn2tOAZWzLUyuBamN8Hj5T+iTGWfj4AqloecbRjxKfIrU3tGMi1PrZmYPEPvppJIHkmt+d2Xg9yOnhqdp06W+1U="
+        FEAuthRequest.Cuit = _cuit
 
         Dim objFECAECabRequest As New wsfev1.FECAECabRequest
         Dim objFECAERequest As New wsfev1.FECAERequest
@@ -94,10 +119,20 @@
             objFECAEResponse = objWSFEV1.FECAESolicitar(FEAuthRequest, objFECAERequest)
             If objFECAEResponse IsNot Nothing Then
                 'Serialize object to a text file.
-                'Dim objStreamWriter As New StreamWriter("C:\WSFEV1_objFECAEResponse.xml")
-                'Dim x As New XmlSerializer(objFECAEResponse.GetType)
-                'x.Serialize(objStreamWriter, objFECAEResponse)
-                'objStreamWriter.Close()
+                Dim objStreamWriter As New StreamWriter("C:\dev\fe\tempo\WSFEV1_objFECAEResponse.xml")
+                Dim ms As New MemoryStream()
+                Dim sw As New StreamWriter(ms)
+
+                Dim x As New XmlSerializer(objFECAEResponse.GetType)
+                x.Serialize(objStreamWriter, objFECAEResponse)
+                x.Serialize(sw, objFECAEResponse)
+                Dim sr As New StreamReader(ms)
+                Dim s As String = sr.ReadToEnd()
+
+                sr.Close()
+                ms.Close()
+                Return s
+                objStreamWriter.Close()
                 'MessageBox.Show("Se generó el archivo C:\WSFEV1_objFECAEResponse.xml")
             End If
             If objFECAEResponse.Errors IsNot Nothing Then
@@ -114,7 +149,7 @@
             End If
         Catch ex As Exception
         End Try
-    End Sub
+    End Function
 
 
 
