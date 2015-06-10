@@ -35,7 +35,7 @@ Public Class Solicitud
         End Get
     End Property
 
-    Private Sub New(ByVal pCuit As String, _
+    Friend Sub New(ByVal pCuit As String, _
                     ByVal pPuntoDeVenta As Integer, _
                     ByVal pTipoComprobante As Integer, _
                     ByVal pToken As String, _
@@ -52,13 +52,13 @@ Public Class Solicitud
     '    Return New Solicitud(pPuntoDeVenta, pTipoComprobante)
     'End Function
 
-    Public Shared Function CrearSolicitud(ByVal pCuit As String, _
-                                          ByVal pPuntoDeVenta As Integer, _
-                                          ByVal pTipoComprobante As Integer, _
-                                          ByVal pToken As String, _
-                                          ByVal pFirma As String) As Solicitud
-        Return New Solicitud(pCuit, pPuntoDeVenta, pTipoComprobante, pToken, pFirma)
-    End Function
+    'Public Shared Function CrearSolicitud(ByVal pCuit As String, _
+    '                                      ByVal pPuntoDeVenta As Integer, _
+    '                                      ByVal pTipoComprobante As Integer, _
+    '                                      ByVal pToken As String, _
+    '                                      ByVal pFirma As String) As Solicitud
+    '    Return New Solicitud(pCuit, pPuntoDeVenta, pTipoComprobante, pToken, pFirma)
+    'End Function
 
     Public Function CrearDetalle() As SolicitudDetalle
         Return New SolicitudDetalle()
@@ -119,21 +119,12 @@ Public Class Solicitud
             objFECAEResponse = objWSFEV1.FECAESolicitar(FEAuthRequest, objFECAERequest)
             If objFECAEResponse IsNot Nothing Then
                 'Serialize object to a text file.
-                Dim objStreamWriter As New StreamWriter("C:\dev\fe\tempo\WSFEV1_objFECAEResponse.xml")
-                Dim ms As New MemoryStream()
-                Dim sw As New StreamWriter(ms)
-
+                Dim sw As New StringWriter()
                 Dim x As New XmlSerializer(objFECAEResponse.GetType)
-                x.Serialize(objStreamWriter, objFECAEResponse)
                 x.Serialize(sw, objFECAEResponse)
-                Dim sr As New StreamReader(ms)
-                Dim s As String = sr.ReadToEnd()
+                sw.Close()
 
-                sr.Close()
-                ms.Close()
-                Return s
-                objStreamWriter.Close()
-                'MessageBox.Show("Se generó el archivo C:\WSFEV1_objFECAEResponse.xml")
+                Return sw.ToString()
             End If
             If objFECAEResponse.Errors IsNot Nothing Then
                 For i = 0 To objFECAEResponse.Errors.Length - 1

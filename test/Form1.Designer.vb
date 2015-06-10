@@ -23,14 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnTest = New System.Windows.Forms.Button()
-        Me.txtFirma = New System.Windows.Forms.TextBox()
-        Me.txtToken = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtCUIT = New System.Windows.Forms.TextBox()
         Me.txtResponse = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cboMonedas = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,70 +40,15 @@ Partial Class Form1
         Me.btnTest.Text = "Test"
         Me.btnTest.UseVisualStyleBackColor = True
         '
-        'txtFirma
-        '
-        Me.txtFirma.Location = New System.Drawing.Point(15, 243)
-        Me.txtFirma.Multiline = True
-        Me.txtFirma.Name = "txtFirma"
-        Me.txtFirma.Size = New System.Drawing.Size(676, 76)
-        Me.txtFirma.TabIndex = 1
-        '
-        'txtToken
-        '
-        Me.txtToken.Location = New System.Drawing.Point(12, 90)
-        Me.txtToken.Multiline = True
-        Me.txtToken.Name = "txtToken"
-        Me.txtToken.Size = New System.Drawing.Size(679, 130)
-        Me.txtToken.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 223)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 17)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Firma"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 70)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 17)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Token"
-        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.txtCUIT)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.txtToken)
-        Me.GroupBox1.Controls.Add(Me.txtFirma)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.cboMonedas)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(715, 338)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Autenticacion"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 35)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 17)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "CUIT"
-        '
-        'txtCUIT
-        '
-        Me.txtCUIT.Location = New System.Drawing.Point(57, 35)
-        Me.txtCUIT.Name = "txtCUIT"
-        Me.txtCUIT.Size = New System.Drawing.Size(130, 22)
-        Me.txtCUIT.TabIndex = 6
         '
         'txtResponse
         '
@@ -116,11 +58,38 @@ Partial Class Form1
         Me.txtResponse.Size = New System.Drawing.Size(715, 246)
         Me.txtResponse.TabIndex = 7
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(553, 356)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(84, 33)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Monedas"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'cboMonedas
+        '
+        Me.cboMonedas.FormattingEnabled = True
+        Me.cboMonedas.Location = New System.Drawing.Point(87, 21)
+        Me.cboMonedas.Name = "cboMonedas"
+        Me.cboMonedas.Size = New System.Drawing.Size(193, 24)
+        Me.cboMonedas.TabIndex = 9
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(15, 24)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(66, 17)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Monedas"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(743, 653)
+        Me.ClientSize = New System.Drawing.Size(1179, 653)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtResponse)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnTest)
@@ -133,13 +102,10 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents btnTest As System.Windows.Forms.Button
-    Friend WithEvents txtFirma As System.Windows.Forms.TextBox
-    Friend WithEvents txtToken As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtCUIT As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtResponse As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cboMonedas As System.Windows.Forms.ComboBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 
 End Class
